@@ -1,0 +1,22 @@
+{
+  "name": "wizzn-ifconfig",
+  "version": "0.0.1",
+  "description": "Get your external IP address",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "wizzn/ifconfig"
+  },
+  "author": "Martin Verspai <github@verspai.de>",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "~4.12.3"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
