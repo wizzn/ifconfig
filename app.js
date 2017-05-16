@@ -1,14 +1,11 @@
+var get_ip = require('ipware')().get_ip;
 var express = require('express');
 
 var app = express();
 
 app.get('/', function (req, res) {
-  var proxy = app.get('trust proxy');
-  if (proxy) {
-    return res.send(req.ips);
-  } else {
-    return res.send(req.ip);
-  }
+  var ip_info = get_ip(req);
+  return res.send(ip_info.clientIp);
 });
 
 app.set('port', 4444);
